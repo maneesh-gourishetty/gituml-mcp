@@ -24,7 +24,6 @@ gituml/
 ├── main.py                ← CLI entry point (argparse)
 ├── test_server.py         ← Quick smoke-test for server tools
 ├── requirements.txt
-├── claude_desktop_config.json
 ├── core/
 │   ├── models.py          ← Data models: ClassMeta, MethodMeta, RepoMetadata, …
 │   └── java_parser.py     ← javalang-based Java AST parser
@@ -163,7 +162,7 @@ Open the config file and add the `gituml` entry:
 
 After saving the config, fully quit and relaunch Claude Desktop.
 
-Look for the **tools (hammer) icon** in the chat input bar — click it to confirm these tools are loaded:
+in the chat input bar — Ask for available tools and it should return the following:
 
 - `analyze_repo`
 - `generate_class_diagram`
